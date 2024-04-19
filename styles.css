@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('bck.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Arial Black', sans-serif;
+}
+
+header {
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    margin-right: auto;
+}
+
+header .logo img {
+    height: 150px;
+    background-color: transparent;
+}
+
+nav,
+.footer-nav {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul,
+.footer-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a,
+.footer-nav ul li a {
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: orange;
+}
+
+.footer-nav ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav ul li a {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.content {
+    padding: 20px;
+    color: #000;
+    text-align: center;
+    min-height: calc(100vh - 250px); /* Поднять контент и изображение */
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content img.right-img {
+    max-width: 45%;
+    height: auto;
+    position: relative; /* Добавлено */
+    top: -115px; /* Поднять изображение вверх на 20px */
+}
+
+.footer {
+    background-color: #000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+}
+
+.subscribe-form {
+    background-color: orange; /* Цвет фона формы подписки */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.special-text {
+    position: relative;
+    top: -170px; /* Поднять надпись вверх на 20px */
+    left: 50px;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 60px;
+    display: inline-block; /* Располагаем надпись в один ряд */
+}
+
+}
+
+.subscribe-form input[type="email"] {
+    width: 240px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscribe-form input[type="submit"] {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-form input[type="submit"]:hover {
+    background-color: #e69500;
+}
+.donate-button {
+    position: relative; /* Делаем кнопку позиционируемой */
+    top: -250px; /* По умолчанию она не сдвинута вертикально */
+    left: 40px; /* По умолчанию она не сдвинута горизонтально */
+    background-color: orange;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s; /* Добавляем плавные анимации при наведении */
+}
+
+/* Добавляем стили для состояния наведения */
+.donate-button:hover {
+    background-color: black;
+    transform: scale(1.1); /* Немного увеличиваем размер при наведении */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Добавляем тень для кнопки */
+}
+/* Другие стили */
+
+@font-face {
+  font-family: 'CustomFont'; /* Название вашего шрифта */
+  src: url('bld.ttf') format('truetype'); /* Путь к вашему шрифту и его формат */
+}
+
+.special-text {
+  font-family: 'CustomFont', 'Arial Black', sans-serif; /* Используем ваш шрифт первым в списке, а затем резервные шрифты */
+  font-size: 110px;
+  display: inline-block;
+}
+/* Ваши текущие стили */
+.Kal {
+    position: relative; /* Устанавливаем относительное позиционирование */
+    top: 300px; /* Перемещаем изображение вниз на 50 пикселей */
+    left: -100px; /* Перемещаем изображение влево на 20 пикселей */
+}
